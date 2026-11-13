@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySpace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>StudySpace</h1>
+        <p>Your personal study planner</p>
+    </header>
+
+    <main>
+        <section class="welcome">
+            <h2>Let's get things done.</h2>
+            <p>Small steps lead to big results.</p>
+        </section>
+
+        <section class="stats">
+            <div class="stat">
+                <h3 id="total">0</h3>
+                <p>Total tasks</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="completed">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat">
+                <h3 id="percent">0%</h3>
+                <p>Progress</p>
+            </div>
+        </section>
+
+        <section class="progress-box">
+            <div class="progress-info">
+                <span>Your progress</span>
+                <span id="progress-text">0%</span>
+            </div>
+            <div class="progress-bg">
+                <div id="progress"></div>
+            </div>
+        </section>
+
+        <section class="tasks">
+            <h2>My tasks</h2>
+
+            <form id="task-form">
+                <input id="task-input" type="text" placeholder="Enter a new task..." required>
+                <button type="submit">Add task</button>
+            </form>
+
+            <div id="task-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>StudySpace © 2026 | Stay focused.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
